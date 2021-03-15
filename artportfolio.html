@@ -3,16 +3,34 @@
   <head>
     <meta charset="utf-8">
     <title>Arts and Design</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Petit+Formal+Script&family=Marck+Script&family=Merriweather&family=Montserrat&display=swap" rel="stylesheet">
   </head>
+
   <body>
     <h1>Arts and Design</h1>
-    <h3>Blender</h3>
-    <img src="images/donut1s.png" alt="donut" width="192" height="108">
-    <img src="images/sculpt.png" alt="sculpt" width="192" height="108">
-    <img src="images/untitled.png" alt="flask" width="192" height="108"><br>
-    <br>
+      <h2 style="padding-bottom: 100px">Blender</h2>
+      <img class="arts" id="img1" src="images/donut1s.png" alt="donut">
+      <img class="arts" id="img2" src="images/sculpt.png" alt="sculpt">
+      <img class="arts" id="img3" src="images/untitled.png" alt="flask"><br>
+
     <hr>
-    <h3>Inkscape</h3>
-    <img src="images/g311.png" alt="logo" width="164" height="164">
+    <h2>Inkscape</h2>
+    <img src="images/g311.png" alt="logo" width="320" height="320">
+
+    <h2><a class="btn" href="https://akifazman.github.io/cv/">Home</a></h2>
+
+    <script type="text/javascript">
+      let img1 = document.getElementById("img1")
+
+      window.addEventListener('scroll', function(){
+        var value = window.scrollY;
+
+        img1.style.left = value * 0.5 + 'px';
+      })
+
+    </script>
   </body>
 </html>
